@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ISAM@Usyd – In-orbit Servicing and Assembly Mission</title>
+  <!-- Google Fonts for modern typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <!-- Font Awesome for clean icons -->
+  <!-- Font Awesome for clean icons (jsDelivr, no SRI to avoid integrity mismatches during testing) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/all.min.css">
+  <!-- Academicons for ResearchGate / Google Scholar (jsDelivr) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.8.6/css/academicons.min.css">
+<!-- Main stylesheet -->
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Hero section with prominent tagline -->
+  <header
+    class="hero"
+    style="background-image: url('assets/img/ISAMheader.png');"
+  >
+    <nav>
+      <div class="logo">ISAM@Usyd</div>
+      <ul class="nav-links">
+        <li><a href="#what">What&nbsp;We&nbsp;Do</a></li>
+        <li><a href="#values">Testbed&nbsp;Ecosystem</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#iac">IAC&nbsp;2025</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero-content">
+      <h1>In-Orbit Servicing, Assembly, and Manufacturing at the University of Sydney</h1>
+      <p>
+        Funded by the SmartSat CRC and supported by industry partners, this project develops next-generation technologies for In-Orbit Servicing, Assembly, and Manufacturing (ISAM). Our focus lies in bridging the gap between autonomous robotic systems and the demands of real-time, reliable close-proximity operations.
+      </p>
+    </div>
+  </header>
+
+  <main>
+  <section id="what">
+    <h2>What We Do</h2>
+    <div class="cards">
+      <div class="card">
+        <div class="card-icon"><i class="fa-solid fa-robot"></i></div>
+        <h3>Mission Autonomy</h3>
+        <p>
+          We create autonomous systems for safe, reliable close-proximity operations in ISAM missions, including state estimation, guidance, and planning from rendezvous to docking. Our robust algorithms, which include Q-law, convex tracking, and model predictive control, enable safe mission execution under real-world constraints
+        </p>
+      </div>
+      <div class="card">
+        <div class="card-icon"><i class="fa-solid fa-eye"></i></div>
+        <h3>Advanced Sensing</h3>
+        <p>
+          Our sensing module spans long-range and close-range optical solutions. We optimize camera design, simulate imaging systems, and develop adaptive exposure and high dynamic range processing techniques to improve situational awareness during ISAM.
+        </p>
+      </div>
+      <div class="card">
+        <div class="card-icon"><i class="fa-solid fa-brain"></i></div>
+        <h3>Perception</h3>
+        <p>
+          We use machine learning and computer vision techniques for satellite detection, feature extraction, and tracking using orbital motion models. The perception stack supports autonomy in uncooperative and uncertain conditions.
+        </p>
+      </div>
+      <div class="card">
+        <div class="card-icon"><i class="fa-solid fa-compass-drafting"></i></div>
+        <h3>Robust Robotic Control</h3>
+        <p>
+          We use intelligent planning and control algorithms to dock with and service satellites. Our methods reduce disturbances on the spacecraft base and ensure constraints are met for safe operation.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="values">
+    <h2>Testbed Ecosystem</h2>
+    <div class="values-grid">
+      <div class="value">
+        <h4>Software Simulation Testbed (SST)</h4>
+        <p>
+          An integrated simulation environment that models the servicer and client spacecraft, sensor suites, and control algorithms. It supports end-to-end testing and verification across all mission phases using realistic dynamics.
+        </p>
+        <img src="assets/testbeds/sst.jpg" alt="SST Image" class="value-img" />
+      </div>
+      <div class="value">
+        <h4>Planar Air-Bearing Testbed (PAT)</h4>
+        <p>
+          A dual-arm robotic platform floating on an air-bearing table, used to validate guidance, control, and rendezvous strategies in 2D. The system includes real-time state estimation and onboard control.
+        </p>
+        <img src="assets/testbeds/pat.jpg" alt="PAT Image" class="value-img" />
+      </div>
+      <div class="value">
+        <h4>Optics Lab Testbed (OLT)</h4>
+        <p>
+          A laboratory-scale optical environment for perception algorithm validation using robotic arms, lighting rigs, and scale models of client satellites under various illumination conditions.
+        </p>
+        <img src="assets/testbeds/olt.jpg" alt="OLT Image" class="value-img" />
+      </div>
+    </div>
+  </section>
+
+<section id="demo">
+  <h2>Demonstrations</h2>
+  <div class="video-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/RBmaIP4kBAY?si=tCN9SRTb-oPgkny0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/oLZbCUtzdLA?si=ssyIDTQGJmeyyVA1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FzBQ0t_zk_A?si=-TJS8Zq3Dh7vrjBf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+</section>
+
+<section id="team">
+  <h2>Team</h2>
+  <h3>Chief Investigators</h3>
+  <div class="team-grid">
+    <div class="team-member">
+      <img src="assets/people/xiaofeng.jpeg" alt="Xiaofeng Wu" />
+      <h4>Dr&nbsp;Xiaofeng&nbsp;Wu</h4>
+      <ul class="social-links">
+        <li><a href="https://www.linkedin.com/in/xiaofeng-wu-076431162/" target="_blank" aria-label="Xiaofeng LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="https://www.researchgate.net/profile/Xiaofeng-Wu-5" target="_blank" aria-label="Xiaofeng ResearchGate"><i class="ai ai-researchgate"></i></a></li>
+        <li><a href="#" target="_blank" aria-label="Xiaofeng Google Scholar"><i class="ai ai-google-scholar"></i></a></li>
+      </ul>
+    </div>
+    <div class="team-member">
+      <img src="assets/people/don.png" alt="Donald Dansereau" />
+      <h4>Dr&nbsp;Donald&nbsp;G.&nbsp;Dansereau</h4>
+      <ul class="social-links">
+        <li><a href="https://www.linkedin.com/in/donald-dansereau/" target="_blank" aria-label="Donald LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="https://www.researchgate.net/profile/Donald-Dansereau" target="_blank" aria-label="Donald ResearchGate"><i class="ai ai-researchgate"></i></a></li>
+        <li><a href="https://scholar.google.com.au/citations?hl=en&user=MVfxch0AAAAJ" target="_blank" aria-label="Donald Google Scholar"><i class="ai ai-google-scholar"></i></a></li>
+      </ul>
+    </div>
+    <div class="team-member">
+      <img src="assets/people/viorela.jpeg" alt="Viorela Ila" />
+      <h4>Dr&nbsp;Viorela&nbsp;Ila</h4>
+      <ul class="social-links">
+        <li><a href="https://www.linkedin.com/in/viorela-ila/" target="_blank" aria-label="Viorela LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="https://www.researchgate.net/profile/Viorela-Ila" target="_blank" aria-label="Viorela ResearchGate"><i class="ai ai-researchgate"></i></a></li>
+        <li><a href="https://scholar.google.com.au/citations?hl=en&user=HeaQbWsAAAAJ" target="_blank" aria-label="Viorela Google Scholar"><i class="ai ai-google-scholar"></i></a></li>
+      </ul>
+    </div>
+    <div class="team-member">
+      <img src="assets/people/salah.jpeg" alt="Salah Sukkarieh" />
+      <h4>Prof&nbsp;Salah&nbsp;Sukkarieh</h4>
+      <ul class="social-links">
+        <li><a href="https://www.linkedin.com/in/salah-sukkarieh/" target="_blank" aria-label="Salah LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="https://www.researchgate.net/profile/Salah-Sukkarieh" target="_blank" aria-label="Salah ResearchGate"><i class="ai ai-researchgate"></i></a></li>
+        <li><a href="https://scholar.google.com.au/citations?hl=en&user=dnjq-FgAAAAJ" target="_blank" aria-label="Salah Google Scholar"><i class="ai ai-google-scholar"></i></a></li>
+      </ul>
+    </div>
+    <div class="team-member">
+      <img src="assets/people/stefan.jpeg" alt="Stefan Williams" />
+      <h4>Prof&nbsp;Stefan&nbsp;Williams</h4>
+      <ul class="social-links">
+        <li><a href="https://www.linkedin.com/in/stefan-williams-88216b23/" target="_blank" aria-label="Stefan LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="https://www.researchgate.net/profile/Stefan-Williams" target="_blank" aria-label="Stefan ResearchGate"><i class="ai ai-researchgate"></i></a></li>
+        <li><a href="https://scholar.google.com.au/citations?hl=en&user=vxN3VO0AAAAJ" target="_blank" aria-label="Stefan Google Scholar"><i class="ai ai-google-scholar"></i></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>Systems Engineer / Project Manager</h3>
+  <div class="team-grid">
+    <div class="team-member">
+      <img src="assets/people/julian.jpg" alt="Julian Guinane" />
+      <h4>Mr&nbsp;Julian&nbsp;Guinane</h4>
+      <ul class="social-links">
+        <li><a href="https://www.linkedin.com/in/julian-guinane/" target="_blank" aria-label="Julian LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="https://www.researchgate.net/profile/Julian-Guinane" target="_blank" aria-label="Julian ResearchGate"><i class="ai ai-researchgate"></i></a></li>
+        <li><a href="https://scholar.google.com.au/citations?hl=en&user=Li9APIsAAAAJ" target="_blank" aria-label="Julian Google Scholar"><i class="ai ai-google-scholar"></i></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>Postdoctoral Researchers</h3>
+  <div class="team-grid">
+    <div class="team-member">
+      <img src="assets/people/tim.jpg" alt="Tim Bailey" />
+      <h4>Dr&nbsp;Tim&nbsp;Bailey</h4>
+      <ul class="social-links">
+        <li><a href="#" target="_blank" aria-label="Tim LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="#" target="_blank" aria-label="Tim ResearchGate"><i class="ai ai-researchgate"></i></a></li>
+        <li><a href="https://scholar.google.com.au/citations?hl=en&user=d46tqIgAAAAJ" target="_blank" aria-label="Tim Google Scholar"><i class="ai ai-google-scholar"></i></a></li>
+      </ul>
+    </div>
+    <div class="team-member">
+      <img src="assets/people/xianliang.webp" alt="Xianliang Chen" />
+      <h4>Dr&nbsp;Xianliang&nbsp;Chen</h4>
+      <ul class="social-links">
+        <li><a href="https://www.linkedin.com/in/xianliang-chen-576ab0268/" target="_blank" aria-label="Xianliang LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="https://www.researchgate.net/profile/Xianliang_Chen2" target="_blank" aria-label="Xianliang ResearchGate"><i class="ai ai-researchgate"></i></a></li>
+        <li><a href="#" target="_blank" aria-label="Xianliang Google Scholar"><i class="ai ai-google-scholar"></i></a></li>
+      </ul>
+    </div>
+    <div class="team-member">
+      <img src="assets/people/jesse.jpeg" alt="Jasprabhjit Mehami" />
+      <h4>Dr&nbsp;Jasprabhjit&nbsp;Mehami</h4>
+      <ul class="social-links">
+        <li><a href="https://www.linkedin.com/in/jessemehami/" target="_blank" aria-label="Jasprabhjit LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="#" target="_blank" aria-label="Jasprabhjit ResearchGate"><i class="ai ai-researchgate"></i></a></li>
+        <li><a href="https://scholar.google.com.au/citations?hl=en&user=j3bTQ84AAAAJ" target="_blank" aria-label="Jasprabhjit Google Scholar"><i class="ai ai-google-scholar"></i></a></li>
+      </ul>
+    </div>
+    <div class="team-member">
+      <img src="assets/people/minduli.jpeg" alt="Minduli Wijayatunga" />
+      <h4>Dr&nbsp;Minduli&nbsp;Wijayatunga</h4>
+      <ul class="social-links">
+        <li><a href="https://www.linkedin.com/in/minduli/" target="_blank" aria-label="Minduli LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="https://www.researchgate.net/profile/Minduli-Wijayatunga" target="_blank" aria-label="Minduli ResearchGate"><i class="ai ai-researchgate"></i></a></li>
+        <li><a href="https://scholar.google.com.au/citations?hl=en&user=sFVzZk4AAAAJ" target="_blank" aria-label="Minduli Google Scholar"><i class="ai ai-google-scholar"></i></a></li>
+      </ul>
+    </div>
+    <div class="team-member">
+      <img src="assets/people/nathan.png" alt="Nathan Wallace" />
+      <h4>Dr&nbsp;Nathan&nbsp;Wallace</h4>
+      <ul class="social-links">
+        <li><a href="https://www.linkedin.com/in/ndwallace/" target="_blank" aria-label="Nathan LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="https://www.researchgate.net/profile/Nathan-Wallace-2" target="_blank" aria-label="Nathan ResearchGate"><i class="ai ai-researchgate"></i></a></li>
+        <li><a href="https://scholar.google.com.au/citations?hl=en&user=MIL9lxcAAAAJ" target="_blank" aria-label="Nathan Google Scholar"><i class="ai ai-google-scholar"></i></a></li>
+      </ul>
+    </div>
+    <div class="team-member">
+      <img src="assets/img/team1.png" alt="Zhicheng Xie" />
+      <h4>Dr&nbsp;Zhicheng&nbsp;Xie</h4>
+      <ul class="social-links">
+        <li><a href="#" target="_blank" aria-label="Zhicheng LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="https://www.researchgate.net/profile/Zhicheng-Xie-3" target="_blank" aria-label="Zhicheng ResearchGate"><i class="ai ai-researchgate"></i></a></li>
+        <li><a href="https://scholar.google.com.au/citations?hl=en&user=8pjJzCgAAAAJ" target="_blank" aria-label="Zhicheng Google Scholar"><i class="ai ai-google-scholar"></i></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>Research Associates</h3>
+  <div class="team-grid">
+    <div class="team-member">
+      <img src="assets/people/will.jpeg" alt="Will Thorp" />
+      <h4>Mr&nbsp;Will&nbsp;Thorp</h4>
+      <ul class="social-links">
+        <li><a href="https://www.linkedin.com/in/will-thorp1/?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAADppRNUB9vP8gqR92CIGlf-BxJc6hsO8TBc" target="_blank" aria-label="Will LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="#" target="_blank" aria-label="Will ResearchGate"><i class="ai ai-researchgate"></i></a></li>
+        <li><a href="#" target="_blank" aria-label="Will Google Scholar"><i class="ai ai-google-scholar"></i></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>PhD Researchers</h3>
+  <div class="team-grid">
+    <div class="team-member">
+      <img src="assets/people/saad.jpeg" alt="Saad Alshammari" />
+      <h4>Mr&nbsp;Saad&nbsp;Alshammari</h4>
+      <ul class="social-links">
+        <li><a href="https://www.linkedin.com/in/sfshammari/" target="_blank" aria-label="Saad LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="#" target="_blank" aria-label="Saad ResearchGate"><i class="ai ai-researchgate"></i></a></li>
+        <li><a href="#" target="_blank" aria-label="Saad Google Scholar"><i class="ai ai-google-scholar"></i></a></li>
+      </ul>
+    </div>
+    <div class="team-member">
+      <img src="assets/people/george.jpeg" alt="Jiashu Wu" />
+      <h4>Mr&nbsp;Jiashu&nbsp;Wu</h4>
+      <ul class="social-links">
+        <li><a href="https://www.linkedin.com/in/george-wu-906a78185/" target="_blank" aria-label="Jiashu LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="https://www.researchgate.net/profile/Jiashu-Wu-3" target="_blank" aria-label="Jiashu ResearchGate"><i class="ai ai-researchgate"></i></a></li>
+        <li><a href="#" target="_blank" aria-label="Jiashu Google Scholar"><i class="ai ai-google-scholar"></i></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>Undergraduate Student Researchers</h3>
+  <div class="team-grid">
+    <div class="team-member">
+      <img src="assets/people/oscar.jpeg" alt="Oscar Ke" />
+      <h4>Oscar&nbsp;Ke</h4>
+      <ul class="social-links">
+        <li><a href="https://www.linkedin.com/in/oscar-ke-991a56288/" target="_blank" aria-label="Oscar LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+      </ul>
+    </div>
+    <div class="team-member">
+      <img src="assets/people/katrina.jpeg" alt="Katrina Marshall" />
+      <h4>Katrina&nbsp;Marshall</h4>
+      <ul class="social-links">
+        <li><a href="https://www.linkedin.com/in/katrinaemarshall/" target="_blank" aria-label="Katrina LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+      </ul>
+    </div>
+    <div class="team-member">
+      <img src="assets/people/yuuichi.jpeg" alt="Yuuichi Tang" />
+      <h4>Yuuichi&nbsp;Tang</h4>
+      <ul class="social-links">
+        <li><a href="https://www.linkedin.com/in/yuuichi-tang-49383920a/" target="_blank" aria-label="Yuuichi LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+      </ul>
+    </div>
+    <div class="team-member">
+      <img src="assets/people/andrian.jpeg" alt="Andrian Yasintus" />
+      <h4>Andrian&nbsp;Yasintus</h4>
+      <ul class="social-links">
+        <li><a href="https://www.linkedin.com/in/andrian-yasintus-5a5aa1235/" target="_blank" aria-label="Andrian LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+      </ul>
+    </div>
+    <div class="team-member">
+      <img src="assets/people/zefeng.jpeg" alt="Zefeng Yu" />
+      <h4>Zefeng&nbsp;Yu</h4>
+      <ul class="social-links">
+        <li><a href="https://www.linkedin.com/in/zefeng-yu-a65955276/" target="_blank" aria-label="Zefeng LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+      </ul>
+    </div>
+    <div class="team-member">
+      <img src="assets/people/jay.jpeg" alt="Jay Zhou" />
+      <h4>Jay&nbsp;Zhou</h4>
+      <ul class="social-links">
+        <li><a href="https://www.linkedin.com/in/jay-zhou-57845a1a7/" target="_blank" aria-label="Jay LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>Funding and Industry Partner Representatives</h3>
+  <div class="team-grid">
+     <div class="team-member">
+       <img src="assets/people/andrewb.jpeg" alt="Andrew Barton" />
+       <h4>Andrew&nbsp;Barton</h4>
+       <p>SmartSat CRC</p>
+       <ul class="social-links">
+         <li><a href="https://www.linkedin.com/in/bartox/" target="_blank" aria-label="Andrew LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+       </ul>
+     </div>
+    <div class="team-member">
+      <img src="assets/people/lakshika.jpeg" alt="Lashika Medagoda" />
+      <h4>Lashika&nbsp;Medagoda</h4>
+      <p>Abyss Solutions</p>
+      <ul class="social-links">
+        <li><a href="https://www.linkedin.com/in/lashika-medagoda-07114949/" target="_blank" aria-label="Lashika LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+      </ul>
+    </div>
+    <div class="team-member">
+      <img src="assets/people/mikhail.jpg" alt="Mikhail Asavkin" />
+      <h4>Mikhail&nbsp;Asavkin</h4>
+      <p>ANT61</p>
+      <ul class="social-links">
+        <li><a href="https://www.linkedin.com/in/limenutt/" target="_blank" aria-label="Mikhail LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+      </ul>
+    </div>
+    <div class="team-member">
+      <img src="assets/people/Linh.jpeg" alt="Linh Trinh" />
+      <h4>Linh&nbsp;Trinh</h4>
+      <p>ANT61</p>
+      <ul class="social-links">
+        <li><a href="https://www.linkedin.com/in/linh-trinh-2048/" target="_blank" aria-label="Linh LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+      </ul>
+    </div>
+    <div class="team-member">
+      <img src="assets/people/julia.jpg" alt="Julia Mitchell" />
+      <h4>Julia&nbsp;Mitchell</h4>
+      <p>Space Machines Co</p>
+      <ul class="social-links">
+        <li><a href="https://www.linkedin.com/in/julia-mitchell-26109742/" target="_blank" aria-label="Julia LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+      </ul>
+    </div>
+    <div class="team-member">
+      <img src="assets/people/alex.jpeg" alt="Alex Priest" />
+      <h4>Alex&nbsp;Priest</h4>
+      <p>Space Machines Co</p>
+      <ul class="social-links">
+        <li><a href="https://www.linkedin.com/in/alexander-priest-71b591147/" target="_blank" aria-label="Alex LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+      </ul>
+    </div>
+    <div class="team-member">
+      <img src="assets/people/Taofiq-Huq.jpg" alt="Taofiq Huq" />
+      <h4>Taofiq&nbsp;Huq</h4>
+      <p>Spiral Blue</p>
+      <ul class="social-links">
+        <li><a href="https://www.linkedin.com/in/taofiqhuq/" target="_blank" aria-label="Taofiq LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+    <!-- Media section
+    <section id="media">
+      <h2>Media</h2>
+      <div class="media-gallery">
+        <img src="assets/img/satellite.png" alt="Satellite" />
+        <img src="assets/img/sensor.png" alt="Sensor" />
+      </div>
+    </section> -->
+
+    <!-- IAC 2025 section -->
+    <section id="iac">
+      <h2>
+         <a href="https://www.iac2025.org/"
+              target="_blank" 
+     rel="noopener noreferrer">
+     International Astronautical Congress &nbsp;2025
+  </a>
+
+      </h2>
+      <h3>Conference Presentations</h3>
+      <table class="iac-table">
+        <thead>
+          <tr>
+            <th>Lead Author</th>
+            <th>Paper</th>
+            <th>Session</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Room</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Minduli&nbsp;Wijayatunga</td>
+            <td>Real‑Time Trajectory Optimization and Guidance for the Final Approach Phase of In‑Orbit Servicing Missions</td>
+            <td>C1.3 Guidance, Navigation and Control&nbsp;(1)</td>
+            <td>29&nbsp;Sept&nbsp;2025</td>
+            <td>16:00</td>
+            <td>C4.8</td>
+          </tr>
+          <tr>
+            <td>Jiashu&nbsp;Wu</td>
+            <td>Design and Experimental Results of a Dual‑Arm Planar Air‑Bearing Platform for ISAM Missions</td>
+            <td>C2.4 Space Structures Control, Dynamics and Microdynamics</td>
+            <td>1&nbsp;Oct&nbsp;2025</td>
+            <td>11:05</td>
+            <td>C3.4</td>
+          </tr>
+          <tr>
+            <td>Jasprabhjit&nbsp;Mehami</td>
+            <td>Balancing Focus and Defocus: Optimized Camera‑Only Imaging for In‑Orbit Satellite Servicing</td>
+            <td>D1.2 Technologies that Enable Space Systems</td>
+            <td>30&nbsp;Sept&nbsp;2025</td>
+            <td>12:05</td>
+            <td>C3.5</td>
+          </tr>
+          <tr>
+            <td>Julian&nbsp;Guinane</td>
+            <td>System Design and Hardware‑In‑The‑Loop Testbed Development for an Australian ISAM Demonstrator Mission</td>
+            <td>D1.4 Cooperative Systems</td>
+            <td>2&nbsp;Oct&nbsp;2025</td>
+            <td>11:03</td>
+            <td>C3.5</td>
+          </tr>
+          <tr>
+            <td>Nathan&nbsp;Wallace</td>
+            <td>An Integrated Framework for Mission Design and Guidance for Autonomous In‑Orbit Servicing Missions</td>
+            <td>IPB – IAF Astrodynamics Symposium (Interactive Presentations)</td>
+            <td>–</td>
+            <td>–</td>
+            <td>–</td>
+          </tr>
+        </tbody>
+      </table>
+     <h3>
+  Special Session: 
+  <a href="https://www.iafastro.org/events/iac/international-astronautical-congress-2025/technical-programme/special-sessions/thursday-2-october/emerging-technologies-for-autonomous-on-orbit-servicing.html" 
+     target="_blank" 
+     rel="noopener noreferrer">
+     Emerging Technologies for Autonomous On‑Orbit Servicing
+  </a>
+</h3>
+      <p><strong>Time:</strong> Thursday 2 Oct 15:00&nbsp;–&nbsp;16:10&nbsp;AEST&nbsp;|&nbsp;<strong>Room:</strong> C4.4</p>
+      <p>
+        Join leading minds from industry, academia and policy‑making to
+        explore how advances in robotics, artificial intelligence and
+        computer vision are transforming satellite servicing. This special
+        session aligns technological innovation with practical needs and
+        regulatory realities, helping to bridge the gap between research
+        breakthroughs and real‑world implementation.
+      </p>
+      <h4>Organisers</h4>
+      <ul class="organisers">
+        <li>Teresa&nbsp;Vidal‑Calleja – Professor &amp; Research Director, Robotics Institute, University of Technology Sydney (UTS)</li>
+        <li>Jack&nbsp;Naylor – PhD Candidate, Australian Centre for Robotics, University of Sydney</li>
+        <li>Nathan&nbsp;Wallace – Research Fellow, Agriculture &amp; Environment Group, ACFR, University of Sydney</li>
+          <li>Minduli&nbsp;Wijayatunga – Adjunct Assistant Professor, Aerospace Engineering, University of Illinois, Urbana-Champaign</li>
+        <li>Julian&nbsp;Guinane – Space Systems Engineer, School of Aerospace, Mechanical and Mechatronic Engineering, University of Sydney</li>
+        <li>Donald&nbsp;G.&nbsp;Dansereau – Senior Lecturer, School of Aerospace, Mechanical and Mechatronic Engineering, University of Sydney</li>
+        <li>Thierry&nbsp;Peynot – Associate Professor, Queensland University of Technology (QUT)</li>
+        <li>Miguel&nbsp;Angel&nbsp;Olivares‑Mendez – Associate Professor, University of Luxembourg</li>
+      </ul>
+      <h3>Technical Tour: Innovation in Space Technology</h3>
+      <p><strong>Date &amp; Time:</strong> Wednesday, 1&nbsp;October, 14:00&nbsp;–&nbsp;17:00</p>
+      <p>
+        Step into the future of space exploration with the University of
+        Sydney’s Innovation in Space Technology tour. As the birthplace of
+        Australia’s first aerospace and physics schools, the University is
+        leading the charge in revolutionising the global space industry. This
+        immersive experience showcases cutting‑edge research in smart
+        sensing, nanosatellites, autonomous robotics and UAVs—designed to
+        make space more affordable and accessible. The tour concludes with
+        drinks and networking at the Chau&nbsp;Chak&nbsp;Wing Museum, an
+        inspiring end to a journey through the cosmos.
+      </p>
+      <h4>Tour Highlights</h4>
+      <ul class="tour-highlights">
+        <li><strong>CUAVA – CubeSats &amp; UAVs in Action:</strong> Learn how
+          Project Waratah Seed and miniature satellites with UAVs transform
+          space data collection across industries.</li>
+        <li><strong>TOLIMAN Space Telescope:</strong> Discover how the
+          innovative TOLIMAN telescope uses astrometric techniques to detect
+          celestial bodies with unprecedented precision, offering a low‑cost
+          alternative for space observation and exoplanet discovery.</li>
+        <li><strong>Australian Centre for Robotics:</strong> Meet the minds
+          behind the Sydney Interplanetary Rover Initiative—a modular rover
+          designed for lunar and Martian missions, highlighting Australia’s
+          leadership in autonomous navigation and robotics.</li>
+        <li><strong>Space Systems Engineering Laboratory:</strong> Witness
+          demonstrations of advanced control systems for on‑orbit servicing,
+          in‑space assembly and manufacturing, pushing the boundaries of space
+          systems engineering.</li>
+      </ul>
+      <p class="note">Closed‑toe shoes are required for all participants.</p>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email us at <a href="mailto:xiaofeng.wu@sydney.edu.au">xiaofeng.wu@sydney.edu.au</a> or <a href="mailto:minduli@illinois.com">minduli@illinois.com</a></p>
+      <p>Sydney&nbsp;NSW, Australia</p>
+    </section>
+  </main>
+  <footer>
+    <p> This work has been supported by the SmartSat CRC, whose activities are funded by the Australian Government’s CRC Program.</p>
+    <p>&copy;&nbsp;2025&nbsp;Minduli W. All rights reserved.</p>
+  </footer>
+  <!-- Main script -->
+  <script src="script.js"></script>
+</body>
+</html>

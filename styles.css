@@ -1,0 +1,502 @@
+/*
+ * OrbitalNav main stylesheet
+ *
+ * This stylesheet defines the look and feel for the entire website. The
+ * aesthetic draws inspiration from modern aerospace research sites with a
+ * clean layout, generous white space and subtle accents drawn from the
+ * blues and purples of our hero image. Responsive design ensures the
+ * content remains legible on desktops and mobile devices alike.
+ */
+
+/* Reset some defaults and set base typography */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #0e2257;
+  background-color: #f9fbfd;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Navigation and hero */
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.2s ease;
+}
+
+.nav-links a:hover {
+  opacity: 0.7;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #e6e8f0;
+}
+
+/* Generic section styling */
+section {
+  padding: 60px 20px;
+}
+
+section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #122d6e;
+  font-weight: 700;
+}
+
+/* Cards for "what we do" */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #e6eaf0;
+  border-radius: 10px;
+  padding: 30px 20px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+}
+
+.card-icon {
+  font-size: 2rem;
+  color: #4f6fe6;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #0e2257;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #4a5879;
+}
+
+/* Design values grid */
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Demo / video container: center and make embedded iframes responsive */
+.video-container {
+  display: flex;
+  flex-wrap: wrap;      /* allow multiple videos to wrap on smaller screens */
+  justify-content: center; /* center the row of videos */
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+.video-container iframe {
+  width: 100%;         /* default to full width of the available flex item */
+  max-width: 560px;    /* don't grow beyond the original embed width */
+  height: calc(560px * 9 / 16); /* maintain 16:9 aspect ratio as a fallback */
+  border: 0;
+}
+
+/* When viewport is narrow, stack videos full-width with reduced height */
+@media (max-width: 700px) {
+  .video-container iframe {
+    max-width: 100%;
+    height: calc(100vw * 9 / 16); /* scale height to viewport width */
+  }
+}
+
+.value {
+  background: #f5f7fa;
+  border-left: 4px solid #4f6fe6;
+  padding: 20px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+}
+
+.value h4 {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  color: #0e2257;
+  font-weight: 600;
+}
+
+.value p {
+  font-size: 0.9rem;
+  color: #4a5879;
+  /* allow the paragraph to take available vertical space so the image can sit at the bottom */
+  flex: 1 1 auto;
+}
+
+.value-img {
+  display: block;
+  margin: 14px auto 0 auto;
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+  /* push the image to the bottom of the tile */
+  margin-top: auto;
+}
+
+/* Publications table */
+#publications input {
+  display: block;
+  margin: 0 auto 20px auto;
+  padding: 10px 15px;
+  width: 80%;
+  max-width: 500px;
+  border: 1px solid #ccd2e0;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+#pubTable {
+  width: 90%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  overflow-x: auto;
+}
+
+#pubTable th,
+#pubTable td {
+  padding: 12px 15px;
+  border: 1px solid #e1e6f0;
+  text-align: left;
+}
+
+#pubTable thead {
+  background: #0e2257;
+  color: #ffffff;
+}
+
+#pubTable tbody tr:nth-child(odd) {
+  background: #f5f7fa;
+}
+
+#pubTable tbody tr:hover {
+  background: #eef2fa;
+}
+
+/* IAC table styling */
+.iac-table {
+  width: 95%;
+  margin: 20px auto 40px auto;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.iac-table th,
+.iac-table td {
+  padding: 10px 12px;
+  border: 1px solid #e1e6f0;
+  text-align: left;
+  vertical-align: top;
+}
+
+.iac-table thead {
+  background: #0e2257;
+  color: #ffffff;
+}
+
+.iac-table tbody tr:nth-child(odd) {
+  background: #f5f7fa;
+}
+
+.iac-table tbody tr:hover {
+  background: #eef2fa;
+}
+
+/* IAC section lists */
+.organisers,
+.tour-highlights {
+  list-style: none;
+  padding-left: 0;
+  margin: 10px 0 30px 0;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.organisers li,
+.tour-highlights li {
+  margin-bottom: 8px;
+  padding-left: 24px;
+  position: relative;
+  color: #4a5879;
+  line-height: 1.4;
+}
+
+.organisers li::before,
+.tour-highlights li::before {
+  content: '\2022'; /* bullet dot */
+  position: absolute;
+  left: 0;
+  color: #4f6fe6;
+  font-weight: bold;
+}
+
+/* Subheadings in IAC section */
+#iac h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  color: #122d6e;
+}
+
+#iac h4 {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #0e2257;
+}
+
+#iac p {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+  color: #4a5879;
+  line-height: 1.6;
+}
+
+#iac .note {
+  font-style: italic;
+  text-align: center;
+  margin-top: 10px;
+  color: #4a5879;
+}
+
+/* Team grid */
+.team-grid {
+  /* Use flex so the last row's items can be centered when it doesn't fill the row */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* center items on each row */
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.team-member {
+  text-align: center;
+  /* Give a flexible basis that mirrors the previous minmax(200px, 1fr) behavior */
+  flex: 1 1 200px; /* grow, shrink, basis */
+  max-width: 240px; /* prevent items from stretching too wide on large screens */
+}
+
+.team-member img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 4px solid #e6eaf0;
+}
+
+.team-member h4 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #0e2257;
+}
+
+.team-member p {
+  font-size: 0.9rem;
+  color: #4a5879;
+}
+
+/* Social links under team members */
+.social-links {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-links li a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  background: #eef2fa;
+  color: #0e2257;
+  text-decoration: none;
+  transition: background 0.15s ease, transform 0.12s ease;
+}
+
+.social-links li a:hover {
+  background: #dbe6ff;
+  transform: translateY(-2px);
+}
+
+.social-links i {
+  font-size: 1rem;
+}
+
+/* Media gallery */
+.media-gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.media-gallery img {
+  width: calc(50% - 15px);
+  min-width: 260px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+
+/* Contact section */
+#contact p {
+  text-align: center;
+  font-size: 1rem;
+  color: #4a5879;
+  margin-bottom: 10px;
+}
+section#team h3 {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.6rem; /* Make it larger than member text */
+  font-weight: 600;
+  color: #222; /* Optional: darken slightly */
+}
+
+
+#contact a {
+  color: #4f6fe6;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background: #0e2257;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  .hero-content p {
+    font-size: 1rem;
+  }
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 420px) {
+  .team-member {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
